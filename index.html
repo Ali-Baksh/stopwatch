@@ -32,8 +32,10 @@
                 }
             }
 
-          
-            displayTime.innerHTML = hours+ ":"+ minutes+ ":"+ seconds;
+            h = hours<10 ? "0"+hours : hours;  
+            m = minutes<10 ? "0"+minutes : minutes;
+            s = seconds<10 ? "0"+seconds : seconds;
+            displayTime.innerHTML = h+ ":"+ m+ ":"+ s;
         }
 
         function watchStart(){
